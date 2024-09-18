@@ -1,0 +1,55 @@
+:root{
+    --primary-color: #4ed419;
+}
+
+.btn {
+    padding: 1rem 0.8rem;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 1px -3px 52px -5px rgba(0, 0, 00, 0.77);     
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn.add {
+    background-color: var(--primary-color);
+}
+
+.btn.add:hover {
+    background-color: #3faf13;
+}
+
+.btn.add:active {
+    background-color: #328b0f;
+}
+
+.btn.remove {
+    background-color: rgb(187, 185, 185);
+}
+
+.btn.remove:hover {
+    background-color: rgb(155, 154, 154);
+}
+
+.btn.remove:active {
+    background-color: rgb(129, 128, 128);
+}
+
+.btn.checkout {
+    background-color: var(--primary-color);
+    width: 120px;
+    color: #000;
+    font-size: 16px;
+}
+
+.btn.checkout:hover {
+    background-color: #3faf13;
+}
+
+.btn.checkout:active {
+    background-color: #328b0f;
+}
