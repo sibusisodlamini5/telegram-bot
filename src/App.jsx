@@ -60,13 +60,14 @@ const App = () =>{
     const queryID = telegram.initDataUnsave?.queryID;
 
     if(queryID){
-      fetch("http://localhost:8000/web-data",{
-        method: "POST",
-        headers: {
+      fetch("https://telegram-bot-raffle-500ad5b543c8.herokuapp.com/web-data",
+        {
+          method: "POST",
+          headers: {
           'Content-Type':'appication/json',
 
-        },
-        body: JSON.stringify(cartItems),
+          },
+          body: JSON.stringify(cartItems),
       });
     }
     else{
