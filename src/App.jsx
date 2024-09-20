@@ -57,7 +57,7 @@ const App = () =>{
   };
 
   const onSendData = useCallback(() => {
-    const queryID = telegram.initDataUnsave?.queryID;
+    const queryID = telegram.initDataUnsafe?.queryID;
 
     if(queryID){
       fetch("https://telegram-bot-raffle-500ad5b543c8.herokuapp.com/web-data",
