@@ -67,7 +67,7 @@ const App = () =>{
           'Content-Type':'appication/json',
 
           },
-          body: JSON.stringify({products: cartItems, queryID:queryID}),
+          body: JSON.stringify(cartItems),
       });
     }
     else{
