@@ -3,7 +3,7 @@ import Button from '../button/button';
 import { totalPrice } from '../../units/total-price';
 
 const Cart = ({cartItems, onCheckout}) => {
-    const numberOfTickets = totalPrice(cartItems)/2;      
+    const numberOfTickets = totalPrice(cartItems)/((2.5*10)/10);      
     
     return <div className='cart__container'>
         <p>
