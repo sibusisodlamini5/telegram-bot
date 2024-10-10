@@ -1,9 +1,10 @@
 import './cart.css';
 import Button from '../button/button';
 import { totalPrice } from '../../units/total-price';
+export const numberOfTickets=1;
 
 const Cart = ({cartItems, onCheckout}) => {
-    const numberOfTickets = totalPrice(cartItems)/((2.5*10)/10);      
+    numberOfTickets = totalPrice(cartItems)/2.5;      
     
     return <div className='cart__container'>
         <p>
